@@ -33,7 +33,7 @@ app.post('/upload-files', async (req, res) => {
                 message: 'No file uploaded'
             });
         } else {
-            //Use the name of the input field (i.e. "avatar") to retrieve the uploaded file
+            //Use the name of the input field (i.e. "image") to retrieve the uploaded file
             let image = req.files.image;
             
             //Use the mv() method to place the file in upload directory (i.e. "uploads")
